@@ -102,3 +102,34 @@ nav {
         opacity: 1
     }
 }
+
+/* faqs accordion arrow rotate */
+.arrow {
+    transition: transform 0.3s ease; /* Smooth transition for rotation */
+}
+
+.arrow.rotate {
+    transform: rotate(-180deg); /* Rotate the arrow 180 degrees */
+}
+
+
+/* Hide scrollbar for testimonials */
+.scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+.animate-marquee {
+    animation: marquee 70s linear infinite;
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+}
+
+.hero{
+    height: calc(100dvh - 60px);
+}

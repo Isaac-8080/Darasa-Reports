@@ -7,6 +7,9 @@
     <!-- vanilla css -->
     <link rel="stylesheet" href="./stylesheet/style.css">
 
+    <!-- favicon -->
+    <link rel="shortcut icon" href="https://abc.darasareports.com/images/darasareports-logo.svg" type="image/x-icon">
+
     <!-- google icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
 
@@ -34,9 +37,9 @@
         <header>
 
             <!-- scroll progress -->
-            <div class="scroll-progress bg-primaryColor h-[5px] w-full fixed z-[1000]"></div>
+            <div class="scroll-progress bg-primaryColor h-[5px] w-full fixed z-[1000] top-0"></div>
 
-            <div class="brand-image flex flex-row items-center justify-between content-center px-5 h-fit fixed w-full bg-[#FFFFFF] md:w-fit">
+            <div class="brand-image flex flex-row items-center md:hidden justify-between top-0 px-5 h-[60px] opacity-95 fixed w-full z-[500] bg-[#FFFFFF] md:w-fit">
                 <span>
                     <img src="https://abc.darasareports.com/images/darasareports-logo.svg" class="w-[60px]" alt="brand-image" srcset="">
                 </span>
@@ -47,7 +50,7 @@
             
             <div class="flex flex-row justify-between hidden md:flex" id="smScreenNav">
 
-                <nav class="flex flex-col md:flex-row md:items-center md:justify-between px-5 md:px-7 fixed h-[100dvh] md:h-[10dvh] bg-[#FFFFFF] z-[500] w-[80%] md:w-full">
+                <nav class="flex flex-col md:flex-row md:items-center md:justify-between top-0 px-5 md:px-7 fixed h-[100dvh] md:h-[60px] md:opacity-95 bg-[#FFFFFF] z-[500] w-[80%] md:w-full">
     
                     <div class="brand-image flex flex-row items-center justify-between hidden md:flex content-center px-5 h-fit w-full md:w-fit">
                         <span>
@@ -58,38 +61,32 @@
                     <div class="mt-5 md:mt-0">
                         <ul class="flex flex-col md:flex-row md:items-center gap-5">
                             <li>
-                                <a href="index.html" class="text-primaryColor cursor-pointer flex flex-row items-center gap-2">
-                                    <span class="material-symbols-rounded md:hidden">home</span>
+                                <a href="index.html" class="text-primaryColor cursor-pointer">
                                     Home
                                 </a>
                             </li>
                             <li>
-                                <a href="about.html" class="text-[#111] hover:text-secondaryColor cursor-pointer flex flex-row items-center gap-2">
-                                    <span class="material-symbols-rounded md:hidden">info</span>
+                                <a href="about.html" class="text-[#111] hover:text-secondaryColor cursor-pointer">
                                     About Us
                                 </a>
                             </li>
                             <li>
-                                <a href="features.html" class="text-[#111] hover:text-secondaryColor cursor-pointer flex flex-row items-center gap-2">
-                                    <span class="material-symbols-rounded md:hidden">list</span>
+                                <a href="features.html" class="text-[#111] hover:text-secondaryColor cursor-pointer">
                                     Features
                                 </a>
                             </li>
                             <li>
-                                <a href="faqs.html" class="text-[#111] hover:text-secondaryColor cursor-pointer flex flex-row items-center gap-2">
-                                    <span class="material-symbols-rounded md:hidden">help_center</span>
+                                <a href="faqs.html" class="text-[#111] hover:text-secondaryColor cursor-pointer">
                                     FAQs
                                 </a>
                             </li>
                             <li>
-                                <a href="blog.html" class="text-[#111] hover:text-secondaryColor cursor-pointer flex flex-row items-center gap-2">
-                                    <span class="material-symbols-rounded md:hidden">post</span>
+                                <a href="blog.html" class="text-[#111] hover:text-secondaryColor cursor-pointer">
                                     Blog
                                 </a>
                             </li>
                             <li>
-                                <a href="contact.html" class="text-[#111] hover:text-secondaryColor cursor-pointer flex flex-row items-center gap-2">
-                                    <span class="material-symbols-rounded md:hidden">contact_support</span>
+                                <a href="contact.html" class="text-[#111] hover:text-secondaryColor cursor-pointer">
                                     Contact Us
                                 </a>
                             </li>
@@ -112,11 +109,11 @@
         <main>
 
             <!-- hero div  -->
-            <div class="flex items-center pt-[50px] h-[100dvh] px-[20px] bg-gradient-to-r from-secondaryColor to-primaryColor">
+            <div class="flex flex-col justify-center items-center hero mt-[60px] bg-gradient-to-r from-secondaryColor to-primaryColor">
     
-                <div class="flex flex-col md:items-center gap-5 md:px-[100px]">
+                <div class="flex flex-col md:justify-center md:items-center px-2 gap-10 md:px-[100px]">
                     
-                    <h1 class="text-5xl md:text-6xl font-black md:text-center md:heading text-[#FFFFFF]">
+                    <h1 class="text-5xl lg:text-7xl font-black md:text-center md:heading text-[#FFFFFF]">
                         Transforming African Education with <span class="brand-name"></span>
                     </h1>
 
@@ -133,6 +130,7 @@
                         </span>
 
                     </a>
+
                 </div>
     
             </div>
@@ -224,18 +222,13 @@
                         </div>
                     </div>
                 </div>
-                
-                <!-- <div class="cta-section mt-5 flex flex-col md:flex-row md:items-center justify-between gap-5">
-                    <a href="#" class="bg-secondaryColor p-2 rounded-md text-[#FFFFFF] w-fit">Schedule a Demo</a>
-                    <a href="#" class="bg-secondaryColor p-2 rounded-md text-[#FFFFFF] w-fit">Learn More About Features</a>
-                </div> -->
 
             </div>
 
             <!-- About us -->
-            <div class="flex flex-col-reverse md:flex-row-reverse md:items-center gap-5 md:gap-0 border md:px-[100px] p-5">
+            <div class="flex flex-col-reverse lg:flex-row-reverse gap-5 md:gap-0 border md:px-[100px] p-5">
 
-                <div class="flex flex-col gap-5 md:p-10 w-[100%]">
+                <div class="flex flex-col gap-5 md:px-10 w-[100%]">
 
                     <div class="text-[#FFFFF]">
 
@@ -259,7 +252,7 @@
                     </div>
 
                     <a href="about.html" class="flex flex-row items-center gap-3 hover:gap-5 ease-in duration-300 font-medium cursor-pointer w-fit">
-                        <span class="underline">Read more here!</span>
+                        <span class="underline text-[14px]">Read more here!</span>
                         <span class="material-symbols-rounded font-medium">
                             east
                         </span>
@@ -319,100 +312,25 @@
                             <p class="p-2">Streamline assignment tracking by allowing teachers to assign, collect, and grade homework and assignments online, with automated reminders for students.</p>
                         </div>
                     </div>
-                    <!-- <div class="feature">
-                        <h3 class="font-bold text-primaryColor subHeading">Timetable Management</h3>
-                        <div class="border rounded-2xl mt-2 cursor-pointer hover:shadow-md ease-in duration-300">
-                            <img src="https://img.icons8.com/?size=80&id=2p051aLcoRBQ&format=png" class="rounded-full border-2 border-primaryColor m-5 p-2 w-[100px] h-[100px] cursor-pointer" alt="image" srcset="">
-                            <p class="p-2">Efficiently manage class schedules by creating and managing timetables for different classes and teachers, ensuring optimal use of school resources and minimizing scheduling conflicts.</p>
-                        </div>
-                    </div>
-                    <div class="feature">
-                        <h3 class="font-bold text-primaryColor subHeading">Student Profile Management</h3>
-                        <div class="border rounded-2xl mt-2 cursor-pointer hover:shadow-md ease-in duration-300">
-                            <img src="https://img.icons8.com/3d-fluency/80/user-male-circle.png" class="rounded-full border-2 border-primaryColor m-5 p-2 w-[100px] h-[100px] cursor-pointer" alt="image" srcset="">
-                            <p class="p-2">Maintain detailed student records, including personal details, academic history, and health information, all in one secure place.</p>
-                        </div>
-                    </div>
-                    <div class="feature">
-                        <h3 class="font-bold text-primaryColor subHeading">Examination Management</h3>
-                        <div class="border rounded-2xl mt-2 cursor-pointer hover:shadow-md ease-in duration-300">
-                            <img src="https://img.icons8.com/?size=48&id=aeo6Jl3iRPTl&format=png" class="rounded-full border-2 border-primaryColor m-5 p-2 w-[100px] h-[100px] cursor-pointer" alt="image" srcset="">
-                            <p class="p-2">Simplify exam scheduling and grading by planning and managing exams, generating seating plans, and automating the grading process to save time and reduce errors.</p>
-                        </div>
-                    </div>
-                    <div class="feature">
-                        <h3 class="font-bold text-primaryColor subHeading">Fee Management</h3>
-                        <div class="border rounded-2xl mt-2 cursor-pointer hover:shadow-md ease-in duration-300">
-                            <img src="https://img.icons8.com/?size=60&id=TYDVZRMohDCE&format=png" class="rounded-full border-2 border-primaryColor m-5 p-2 w-[100px] h-[100px] cursor-pointer" alt="image" srcset="">
-                            <p class="p-2">Handle financial transactions with ease by managing student fee payments, generating invoices, and tracking outstanding balances, ensuring transparent and efficient financial operations.</p>
-                        </div>
-                    </div>
-                    <div class="feature">
-                        <h3 class="font-bold text-primaryColor subHeading">Library Management</h3>
-                        <div class="border rounded-2xl mt-2 cursor-pointer hover:shadow-md ease-in duration-300">
-                            <img src="https://img.icons8.com/?size=80&id=97781&format=png" class="rounded-full border-2 border-primaryColor m-5 p-2 w-[100px] h-[100px] cursor-pointer" alt="image" srcset="">
-                            <p class="p-2">Organize and track library resources by maintaining an organized library system, tracking book loans and returns, and managing inventory efficiently.</p>
-                        </div>
-                    </div>
-                    <div class="feature">
-                        <h3 class="font-bold text-primaryColor subHeading">Event Management</h3>
-                        <div class="border rounded-2xl mt-2 cursor-pointer hover:shadow-md ease-in duration-300">
-                            <img src="https://img.icons8.com/?size=48&id=fTBV7GkKahC6&format=png" class="rounded-full border-2 border-primaryColor m-5 p-2 w-[100px] h-[100px] cursor-pointer" alt="image" srcset="">
-                            <p class="p-2">Plan and coordinate school events by scheduling and managing school events, extracurricular activities, and parent-teacher meetings, keeping everyone informed and engaged.</p>
-                        </div>
-                    </div>
-                    <div class="feature">
-                        <h3 class="font-bold text-primaryColor subHeading">Mobile Access</h3>
-                        <div class="border rounded-2xl mt-2 cursor-pointer hover:shadow-md ease-in duration-300">
-                            <img src="https://img.icons8.com/dusk/80/iphone-x.png" class="rounded-full border-2 border-primaryColor m-5 p-2 w-[100px] h-[100px] cursor-pointer" alt="image" srcset="">
-                            <p class="p-2">Access the system anywhere, anytime with a mobile-friendly design that ensures administrators, teachers, parents, and students can use <span class="brand-name"></span> on any device, anywhere.</p>
-                        </div>
-                    </div>
-                    <div class="feature">
-                        <h3 class="font-bold text-primaryColor subHeading">Data Security and Privacy</h3>
-                        <div class="border rounded-2xl mt-2 cursor-pointer hover:shadow-md ease-in duration-300">
-                            <img src="https://img.icons8.com/?size=80&id=4szyUoJJgwWU&format=png" class="rounded-full border-2 border-primaryColor m-5 p-2 w-[100px] h-[100px] cursor-pointer" alt="image" srcset="">
-                            <p class="p-2">Protect sensitive information by implementing robust security measures to safeguard student and school data, ensuring compliance with data protection regulations.</p>
-                        </div>
-                    </div>
-                    <div class="feature">
-                        <h3 class="font-bold text-primaryColor subHeading">User Role Management</h3>
-                        <div class="border rounded-2xl mt-2 cursor-pointer hover:shadow-md ease-in duration-300">
-                            <img src="https://img.icons8.com/?size=48&id=NI5Abz1Uh2IA&format=png" class="rounded-full border-2 border-primaryColor m-5 p-2 w-[100px] h-[100px] cursor-pointer" alt="image" srcset="">
-                            <p class="p-2">Define and manage user permissions by assigning specific roles and permissions to different users, ensuring that only authorized personnel have access to sensitive information.</p>
-                        </div>
-                    </div>
-                    <div class="feature">
-                        <h3 class="font-bold text-primaryColor subHeading">Integrations with Other Systems</h3>
-                        <div class="border rounded-2xl mt-2 cursor-pointer hover:shadow-md ease-in duration-300">
-                            <img src="https://img.icons8.com/?size=48&id=24459&format=png" class="rounded-full border-2 border-primaryColor m-5 p-2 w-[100px] h-[100px] cursor-pointer" alt="image" srcset="">
-                            <p class="p-2">Seamlessly integrate with existing systems by ensuring <span class="brand-name"></span> can work with other educational tools and platforms, providing a cohesive and efficient workflow.</p>
-                        </div>
-                    </div>
-                    <div class="feature">
-                        <h3 class="font-bold text-primaryColor subHeading">Real-Time Notifications</h3>
-                        <div class="border rounded-2xl mt-2 cursor-pointer hover:shadow-md ease-in duration-300">
-                            <img src="https://img.icons8.com/?size=80&id=6ctPQtwO58Z9&format=png" class="rounded-full border-2 border-primaryColor m-5 p-2 w-[100px] h-[100px] cursor-pointer" alt="image" srcset="">
-                            <p class="p-2">Keep everyone informed by sending real-time notifications to students, parents, and staff about important updates, assignments, events, and more.</p>
-                        </div>
-                    </div> -->
+
+                    <a href="features.html" class="flex flex-row items-center gap-3 hover:gap-5 ease-in duration-300 font-medium cursor-pointer w-fit">
+                        <span class="underline text-[14px]">Visit for more!</span>
+                        <span class="material-symbols-rounded font-medium">
+                            east
+                        </span>
+                    </a>
                     
                 </div>
-                
-                <!-- <div class="cta-section mt-5 flex flex-col md:flex-row md:items-center justify-between gap-5">
-                    <a href="#" class="bg-secondaryColor p-2 rounded-md text-[#FFFFFF] w-fit">Schedule a Demo</a>
-                    <a href="#" class="bg-secondaryColor p-2 rounded-md text-[#FFFFFF] w-fit">Learn More About Features</a>
-                </div> -->
 
             </div>
 
             <!-- join now message with button directing users to sign up -->
-            <div class="flex flex-col-reverse md:flex-row md:items-center gap-5 md:gap-0 bg-secondaryColor md:px-[50px] p-10 my-[50px]">
+            <div class="flex flex-col-reverse md:flex-row md:items-center gap-5 md:gap-0 bg-secondaryColor md:px-[50px] p-10 mt-[50px]">
 
                 <div class="flex flex-col gap-5 md:p-10">
 
                     <div class="text-[#FFFFFF] font-black text-4xl md:text-5xl">
-                        <p>Join now and unlock <br class="hidden md:flex"> endless learning possibilities.</p>
+                        <p>Join now and unlock <br class="hidden md:flex"> great and better experience.</p>
                     </div>
 
                     <a href="" class="flex flex-row items-center gap-3 hover:gap-5 ease-in duration-300 bg-gradient-to-r from-secondaryColor to-primaryColor text-[#FFFFFF] font-bold px-5 py-4 rounded-lg border cursor-pointer w-fit">
@@ -429,7 +347,229 @@
                 </div>
 
             </div>
+
             
+            <!-- Testimonials Section mudium and above screens -->
+            <div class="p-8 bg-gray-100 md:px-[100px]">
+
+                <h2 class="text-2xl font-bold mb-6">What Our Users Are Saying</h2>
+
+                <div class="relativ overflow-hidden">
+
+                    <!-- Scrollable Container -->
+                    <div class="flex flex-col md:flex-row gap-5 overflow-x-auto scrollbar-hidden">
+
+                        <!-- Testimonial Card -->
+                        <div class="flex-none w-full md:w-80 bg-[#F43338] p-4 rounded-lg shadow-lg">
+                            <p class="text-gray-700 mb-2 text-[14px] text-white">"Darasa Reports has transformed how we manage student data. The interface is user-friendly, and the features are exactly what we needed."</p>
+                            <div class="flex flex-row items-center gap-1">
+                                <img src="https://img.icons8.com/3d-fluency/80/user-male-circle.png" class="rounded-full border-2 border-gray-400 mx-1 w-[50px] h-[50px] cursor-pointer" alt="image" srcset="">
+                                <div class="">
+                                    <p class="font-semibold text-[14px] text-white">Jane Doe</p>
+                                    <p class="text-gray-300 text-[12px] italic">Principal, ABC School</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial Card -->
+                        <div class="flex-none w-full md:w-80 bg-primaryColor p-4 rounded-lg shadow-lg">
+                            <p class="text-gray-700 mb-2 text-[14px] text-white">"The ability to track grades and attendance in real-time has been a game-changer for our school. Highly recommend Darasa Reports!"</p>
+                            <div class="flex flex-row items-center gap-1">
+                                <img src="https://img.icons8.com/3d-fluency/80/user-male-circle.png" class="rounded-full border-2 border-gray-400 mx-1 w-[50px] h-[50px] cursor-pointer" alt="image" srcset="">
+                                <div class="">
+                                    <p class="font-semibold text-[14px] text-white">John Smith</p>
+                                    <p class="text-gray-900 text-[12px] italic">Teacher, XYZ School</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial Card -->
+                        <div class="flex-none w-full md:w-80 bg-white p-4 rounded-lg shadow-lg">
+                            <p class="text-gray-700 mb-2 text-[14px]">"As a parent, I'm thrilled with how Darasa Reports keeps me informed about my child's progress. It's a fantastic tool for school-parent communication."</p>
+                            <div class="flex flex-row items-center gap-1">
+                                <img src="https://img.icons8.com/3d-fluency/80/user-male-circle.png" class="rounded-full border-2 border-gray-400 mx-1 w-[50px] h-[50px] cursor-pointer" alt="image" srcset="">
+                                <div class="">
+                                    <p class="font-semibold text-[14px]">Emily Johnson</p>
+                                    <p class="text-gray-700 text-[12px] italic">Parent</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial Card -->
+                        <div class="flex-none w-full md:w-80 bg-secondaryColor p-4 rounded-lg shadow-lg">
+                            <p class="text-gray-700 mb-2 text-[14px] text-white">"The detailed analytics and easy-to-use interface have made managing our school’s data so much simpler. Darasa Reports is indispensable!"</p>
+                            <div class="flex flex-row items-center gap-1">
+                                <img src="https://img.icons8.com/3d-fluency/80/user-male-circle.png" class="rounded-full border-2 border-gray-400 mx-1 w-[50px] h-[50px] cursor-pointer" alt="image" srcset="">
+                                <div class="">
+                                    <p class="font-semibold text-[14px] text-white">Michael Brown</p>
+                                    <p class="text-gray-300 text-[12px] italic">Administrator, DEF School</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial Card -->
+                        <div class="flex-none w-full md:w-80 bg-[#91CEFB] p-4 rounded-lg shadow-lg">
+                            <p class="text-gray-700 mb-2 text-[14px]">"With Darasa Reports, we've been able to streamline our processes and improve communication with parents. It's an excellent tool for any school."</p>
+                            <div class="flex flex-row items-center gap-1">
+                                <img src="https://img.icons8.com/3d-fluency/80/user-male-circle.png" class="rounded-full border-2 border-gray-400 mx-1 w-[50px] h-[50px] cursor-pointer" alt="image" srcset="">
+                                <div class="">
+                                    <p class="font-semibold text-[14px] text-white">Sophia Davis</p>
+                                    <p class="text-gray-500 text-[12px] italic">Teacher, GHI School</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial Card -->
+                        <div class="flex-none w-full md:w-80 bg-[#F8B204] p-4 rounded-lg shadow-lg">
+                            <p class="text-gray-700 mb-2 text-[14px] text-white">"Darasa Reports is intuitive and easy to navigate. The support team is fantastic and always ready to help with any issues."</p>
+                            <div class="flex flex-row items-center gap-1">
+                                <img src="https://img.icons8.com/3d-fluency/80/user-male-circle.png" class="rounded-full border-2 border-gray-400 mx-1 w-[50px] h-[50px] cursor-pointer" alt="image" srcset="">
+                                <div class="">
+                                    <p class="font-semibold text-[14px] text-white">David Wilson</p>
+                                    <p class="text-gray-300 text-[12px] italic">Parent</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- socials container -->
+            <!-- <div class="p-8 bg-gray-100 md:px-[100px]">
+                <h2 class="text-2xl font-bold mb-6">What Our Users Are Saying</h2>
+                <div class="overflow-hidden">
+                    <div class="flex flex-row animate-marquee">
+                        
+                        <div class="flex-none w-80 bg-white p-4 rounded-lg shadow-lg mr-6">
+                            <p class="text-gray-700 mb-4">"<span class="brand-name"></span> has transformed how we manage student data. The interface is user-friendly, and the features are exactly what we needed."</p>
+                            <p class="font-semibold">Jane Doe</p>
+                            <p class="text-gray-500">Principal, ABC School</p>
+                        </div>
+                        
+                        <div class="flex-none w-80 bg-white p-4 rounded-lg shadow-lg mr-6">
+                            <p class="text-gray-700 mb-4">"The ability to track grades and attendance in real-time has been a game-changer for our school. Highly recommend <span class="brand-name"></span>!"</p>
+                            <p class="font-semibold">John Smith</p>
+                            <p class="text-gray-500">Teacher, XYZ School</p>
+                        </div>
+                        
+                        <div class="flex-none w-80 bg-white p-4 rounded-lg shadow-lg mr-6">
+                            <p class="text-gray-700 mb-4">"As a parent, I'm thrilled with how <span class="brand-name"></span> keeps me informed about my child's progress. It's a fantastic tool for school-parent communication."</p>
+                            <p class="font-semibold">Emily Johnson</p>
+                            <p class="text-gray-500">Parent</p>
+                        </div>
+                        
+                        <div class="flex-none w-80 bg-white p-4 rounded-lg shadow-lg mr-6">
+                            <p class="text-gray-700 mb-4">"The detailed analytics and easy-to-use interface have made managing our school’s data so much simpler. <span class="brand-name"></span> is indispensable!"</p>
+                            <p class="font-semibold">Michael Brown</p>
+                            <p class="text-gray-500">Administrator, DEF School</p>
+                        </div>
+                        
+                        <div class="flex-none w-80 bg-white p-4 rounded-lg shadow-lg mr-6">
+                            <p class="text-gray-700 mb-4">"With <span class="brand-name"></span>, we've been able to streamline our processes and improve communication with parents. It's an excellent tool for any school."</p>
+                            <p class="font-semibold">Sophia Davis</p>
+                            <p class="text-gray-500">Teacher, GHI School</p>
+                        </div>
+                        
+                        <div class="flex-none w-80 bg-white p-4 rounded-lg shadow-lg mr-6">
+                            <p class="text-gray-700 mb-4">"<span class="brand-name"></span> is intuitive and easy to navigate. The support team is fantastic and always ready to help with any issues."</p>
+                            <p class="font-semibold">David Wilson</p>
+                            <p class="text-gray-500">Parent</p>
+                        </div>
+                        
+                        <div class="flex-none w-80 bg-white p-4 rounded-lg shadow-lg mr-6">
+                            <p class="text-gray-700 mb-4">"<span class="brand-name"></span> has transformed how we manage student data. The interface is user-friendly, and the features are exactly what we needed."</p>
+                            <p class="font-semibold">Jane Doe</p>
+                            <p class="text-gray-500">Principal, ABC School</p>
+                        </div>
+                        
+                        <div class="flex-none w-80 bg-white p-4 rounded-lg shadow-lg mr-6">
+                            <p class="text-gray-700 mb-4">"The ability to track grades and attendance in real-time has been a game-changer for our school. Highly recommend <span class="brand-name"></span>!"</p>
+                            <p class="font-semibold">John Smith</p>
+                            <p class="text-gray-500">Teacher, XYZ School</p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            
+            <div class="flex flex-col justify-center md:flex-row px-5 my-[100px]">
+                    
+                <div class="flex flex-col justify-between gap-7 md:w-[70%]">
+                    
+                    <h2 class="text-secondaryColor font-bold text-2xl md:text-3xl mb-5 heading">Frequently Asked Questions</h2>
+        
+                    <div class="flex flex-col gap-3">
+
+                        <h2 class="bg-primaryColor w-fit py-1 px-3 font-bold rounded text-[#FFFFFF]">General Information</h2>
+
+                        <div class="flex flex-row items-center justify-between gap-3 accordionToggle cursor-pointer">
+                            <div>
+                                <p class="text-secondaryColor">What is <span class="brand-name"></span>?</p>
+                            </div>
+                            <div>
+                                <span class="material-symbols-rounded bg-gradient-to-r from-primaryColor to-secondaryColor border rounded-full p-1 text-[#FFFFFF] arrow">
+                                    keyboard_arrow_down
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <div class="hidden accordionText">
+                            <p class="px-5 text-[14px]">
+                                <span class="brand-name"></span> is a student information system and gradebook designed specifically for African schools to manage educational data seamlessly and improve student outcomes.
+                            </p>
+                        </div>
+                        <hr>
+                
+                        <div class="flex flex-row items-center justify-between gap-3 accordionToggle cursor-pointer">
+                            <div>
+                                <p class="text-secondaryColor">Who can use <span class="brand-name"></span>?</p>
+                            </div>
+                            <div>
+                                <span class="material-symbols-rounded bg-gradient-to-r from-primaryColor to-secondaryColor border rounded-full p-1 text-[#FFFFFF] arrow">
+                                    keyboard_arrow_down
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="hidden accordionText">
+                            <p class="px-5 text-[14px]">
+                                <span class="brand-name"></span> is designed for school administrators, teachers, parents, and students. It provides different user roles and permissions to cater to the needs of each group.
+                            </p>
+                        </div>
+                        <hr>
+                
+                        <div class="flex flex-row items-center justify-between gap-3 accordionToggle cursor-pointer">
+                            <div>
+                                <p class="text-secondaryColor">Is my data secure with <span class="brand-name"></span>?</p>
+                            </div>
+                            <div>
+                                <span class="material-symbols-rounded bg-gradient-to-r from-primaryColor to-secondaryColor border rounded-full p-1 text-[#FFFFFF] arrow">
+                                    keyboard_arrow_down
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="hidden accordionText">
+                            <p class="px-5 text-[14px]">
+                                Yes, we prioritize data security and privacy. We implement robust security measures to protect sensitive student and school data and ensure compliance with data protection regulations.
+                            </p>
+                        </div>
+
+                        <a href="faqs.html" class="flex flex-row items-center gap-3 my-10 hover:gap-5 ease-in duration-300 font-medium cursor-pointer w-fit">
+                            <span class="underline text-[14px]">For more FAQs, click here!</span>
+                            <span class="material-symbols-rounded font-medium">
+                                east
+                            </span>
+                        </a>
+
+                    </div>
+        
+                </div>
+            
+            </div>
+
         </main>
 
         <footer>
@@ -440,9 +580,7 @@
     
                     <div>
                         
-                        <span class="text-primaryColor font-black text-2xl brand-name">
-                            <!-- Easy <br> <span class="text-secondaryColor">ahead</span> -->
-                        </span>
+                        <span class="text-primaryColor font-black text-2xl brand-name"></span>
                         <p class="text-[12px] text-primaryColor mt-5">
                             Your Comprehensive Student Information 
                             <br> System and Gradebook Solution
@@ -511,22 +649,22 @@
                             Popular Features
                         </li>
                         <li class="hover:underline hover:text-secondaryColor w-fit text-primaryColor font-medium">
-                            <a href="">Embed <span class="brand-name"></span></a>
+                            <a href="#">Embed <span class="brand-name"></span></a>
                         </li>
                         <li class="hover:underline hover:text-secondaryColor w-fit text-primaryColor font-medium">
-                            <a href="">Availability</a>
+                            <a href="#">Availability</a>
                         </li>
                         <li class="hover:underline hover:text-secondaryColor w-fit text-primaryColor font-medium">
-                            <a href="">Sending Notifications</a>
+                            <a href="#">Sending Notifications</a>
                         </li>
                         <li class="hover:underline hover:text-secondaryColor w-fit text-primaryColor font-medium">
-                            <a href="">Using <span class="brand-name"></span> Mobile</a>
+                            <a href="#">Using <span class="brand-name"></span> Mobile</a>
                         </li>
                         <li class="hover:underline hover:text-secondaryColor w-fit text-primaryColor font-medium">
-                            <a href="">Blog</a>
+                            <a href="blog.html">Blog</a>
                         </li>
                         <li class="hover:underline hover:text-secondaryColor w-fit text-primaryColor font-medium">
-                            <a href="">FAQs</a>
+                            <a href="faqs.html">FAQs</a>
                         </li>
                     </ul>
     
@@ -539,5 +677,6 @@
     </div>
     
     <script src="./script/main.js"></script>
+    <script src="./script/faqs.js"></script>
 </body>
 </html>

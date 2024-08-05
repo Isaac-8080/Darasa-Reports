@@ -38,6 +38,7 @@ function brandName(brand_name) {
 brandName('Darasa Reports');
 
 
+// hero show slides images
 let slideIndex = 0;
 showSlides();
 
@@ -52,3 +53,24 @@ function showSlides() {
     slides[slideIndex-1].style.display = "block";  
     setTimeout(showSlides, 8000); // Change image every 5 seconds
 }
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const accordions = document.querySelectorAll('.accordionToggle');
+
+    accordions.forEach(accordion => {
+        accordion.addEventListener('click', function () {
+            const text = this.nextElementSibling.querySelector('.accordionText');
+            const icon = this.querySelector('.material-symbols-rounded');
+
+            if (text.classList.contains('hidden')) {
+                text.classList.remove('hidden');
+                icon.textContent = 'keyboard_arrow_up';
+            } else {
+                text.classList.add('hidden');
+                icon.textContent = 'keyboard_arrow_down';
+            }
+        });
+    });
+});
+
